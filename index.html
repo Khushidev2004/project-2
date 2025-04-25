@@ -1,71 +1,49 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <style>
-    body {
-      margin: 0;
-    }
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		.wrapper h1{
+			text-align: center;
+			font-size: 30px;
+			font-family: Audiowide;
 
-    .container {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      grid-template-rows: 60px auto auto;
-      gap: 10px;
-      background-color: #3b6dc6;
-      padding: 10px;
-      height: 100vh;
-    }
+		}
+		.img-area{
+			display: flex;
+			flex-wrap: wrap;
+			flex-direction: row;
+			align-items: center;
+			justify-content: center;
+		}
 
-    .header {
-      grid-column: 1 / 5;
-      background: black;
-    }
+		.single-img{
+			padding: 0 20px 20px;
 
-    .green-left {
-      grid-column: 1 / 2;
-      grid-row: 2 / 4;
-      background: linear-gradient(#b2df8a, #a6cf85);
-    }
+		}
+		img:hover{
+			opacity: .5;
+			transition: 9s;
+		}
 
-    .orange-top {
-      grid-column: 2 / 3;
-      background: #f68c1f;
-    }
-
-    .green-top-right {
-      grid-column: 3 / 5;
-      background: #66bb6a;
-      border: 1px solid white;
-    }
-
-    .green-middle {
-      grid-column: 2 / 3;
-      background: linear-gradient(#b2df8a, #a6cf85);
-    }
-
-    .orange-bottom {
-      grid-column: 3 / 4;
-      background: #f68c1f;
-    }
-
-    .green-right {
-      grid-column: 4 / 5;
-      background: linear-gradient(#b2df8a, #a6cf85);
-    }
-  </style>
+	</style>
 </head>
 <body>
-  <div class="container">
-    <div class="header"></div>
-    <div class="green-left"></div>
-    <div class="orange-top"></div>
-    <div class="green-top-right"></div>
-    <div class="green-middle"></div>
-    <div class="orange-bottom"></div>
-    <div class="green-right"></div>
-  </div>
+	<div class="wrapper">
+		<h1>flexbox image gallery</h1>
+
+		<div class="img-area"> 
+			<div class="single-img"><img src="girl2.jpg" alt=""></div>
+			<div class="single-img"><img src="girl2.jpg" alt=""></div>
+			<div class="single-img"><img src="girl2.jpg" alt=""></div>
+			<div class="single-img"><img src="girl2.jpg" alt=""></div>
+			<div class="single-img"><img src="girl2.jpg" alt=""></div>
+			<div class="single-img"><img src="girl2.jpg" alt=""></div>
+			
+
+		</div>
+	</div>
 </body>
 </html>
